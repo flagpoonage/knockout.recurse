@@ -175,3 +175,8 @@ FakesAssemblies/
 
 #bower components
 bower_components/
+
+#web configuration files
+web.config
+web.Debug.config
+web.Release.config

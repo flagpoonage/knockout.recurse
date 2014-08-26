@@ -28,7 +28,15 @@
     <Content Include="tests\qunit.js" />
     <Content Include="tests\test.html" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="ts-def\knockout.d.ts" />
     <TypeScriptCompile Include="ts-def\knockout.recurse.d.ts" />
